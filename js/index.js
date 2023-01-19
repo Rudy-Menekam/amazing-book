@@ -28,6 +28,7 @@ g.book.forEach((b) => {
       <p>${b.title}</p>
       <p>${b.author}</p>
         <button class="deleteBtn" id="${b.id}">Remove</button>
+        <hr>
       </div>
     `;
 });
