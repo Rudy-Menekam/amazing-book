@@ -10,6 +10,19 @@ body {
   flex-direction: column;
 }
 
+
+.flex{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-direction: column; */
+}
+
+.flex-dir-colu{
+  display: flex;
+  flex-direction: column;
+}
+
 main {
   min-height: calc(100vh - 140px);
   max-width: 400px;
@@ -24,4 +37,45 @@ main {
 button {
   width: 100px;
   padding: 3px;
+}
+
+.innerContainer{
+    padding: 5px;
+    margin: 5px;
+    background: red;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input{
+  
+    width: 300px;
+    margin: 20px 0 10px 0;
+    padding: 5px 30px;
+    border-radius: 10px;
+
+}
+
+.light{
+  background-color: yellow;
+}
+
+.dark{
+  background-color: blue;
+}
+
+h1{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.addBtn{
+  border: none;
+    background: green;
+    border-radius: 10px;
 }

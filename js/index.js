@@ -24,13 +24,20 @@ const bookContainer = document.querySelector('.bookContainer');
 const g = new Library();
 g.book.forEach((b) => {
   bookContainer.innerHTML += `
-      <div class="innerContainer">
-      <p>${b.title}</p>
+      <div class="innerContainer flex">
+      <p>${b.title}</p> by
       <p>${b.author}</p>
         <button class="deleteBtn" id="${b.id}">Remove</button>
         <hr>
       </div>
     `;
+
+    if (b.id % 2 ==0) {
+      document.querySelector('.innerContainer').classList.add('light')
+    }else{
+      document.querySelector('.innerContainer').classList.add('dark')
+
+    }
 });
 
 bookContainer.addEventListener('click', (e) => {
