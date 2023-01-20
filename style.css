@@ -77,9 +77,10 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid;
+  background-color: antiquewhite;
+  box-shadow: 3px 1px 3px grey;
   width: 100%;
-  margin: 12px auto;
+  margin: -31px auto;
   padding: 20px;
 }
 
