@@ -137,3 +137,15 @@ li a {
 .active {
   color: #04aa6d;
 }
+
+.contact-section {
+  padding-top: 20%;
+}
+
+#form-section {
+  padding-top: 20%;
+}
+
+#book-section {
+  padding-top: 20%;
+}

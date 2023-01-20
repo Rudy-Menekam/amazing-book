@@ -42,37 +42,40 @@ bookContainer.addEventListener('click', (e) => {
 
 document.querySelector('.addBtn').addEventListener('click', g.addBook);
 
-// a complete website with navigation
-const list = document.getElementById('list');
-const addNew = document.getElementById('addNew');
-const contact = document.getElementById('contact');
-const listBook = document.querySelector('.bookContainer');
-const addNewSect = document.querySelector('.innerContainer');
-const contactSect = document.getElementById('.contact-section');
+const menuItems = document.querySelectorAll('li');
+const sections = document.querySelectorAll('section');
+function reset() {
+  sections.forEach((section) => {
+    section.style.display = 'none';
+  });
+}
+reset();
+sections[0].style.display = 'block';
 
-list.addEventListener('click', () => {
-  addNewSect.classList.add('non-display');
-  listBook.classList.remove('non-display');
-  contactSect.classList.add('non-display');
-  list.classList.add('active');
-  addNew.classList.remove('active');
-  contact.classList.remove('active');
+menuItems[0].addEventListener('click', () => {
+  reset();
+  sections[0].style.display = 'block';
 });
 
-addNew.addEventListener('click', () => {
-  addNewSect.classList.remove('non-display');
-  listBook.classList.add('non-display');
-  contactSect.classList.add('non-display');
-  list.classList.remove('active');
-  addNew.classList.add('active');
-  contact.classList.remove('active');
+menuItems[1].addEventListener('click', () => {
+  reset();
+  sections[1].style.display = 'block';
 });
 
-contact.addEventListener('click', () => {
-  addNewSect.classList.add('non-display');
-  listBook.classList.add('non-display');
-  contactSect.classList.remove('non-display');
-  list.classList.remove('active');
-  contact.classList.add('active');
-  addNew.classList.remove('active');
+menuItems[2].addEventListener('click', () => {
+  reset();
+  sections[2].style.display = 'block';
 });
+
+const menuBtn = document.getElementById('burger-container');
+const navOverlay = document.getElementById('nav');
+const navList = document.getElementsByClassName('menu')[0];
+const burgerBar = document.getElementsByClassName('hamRotate')[0];
+function overlay() {
+  navOverlay.classList.toggle('invisible');
+  burgerBar.classList.toggle('active');
+  navOverlay.style.animation = 'awesome-out 1s';
+}
+
+menuBtn.addEventListener('click', overlay);
+navList.addEventListener('click', overlay);
