@@ -10,17 +10,18 @@ body {
   flex-direction: column;
 }
 
-
-.flex{
-  display:flex;
+.flex {
+  display: flex;
   justify-content: space-between;
-  align-items: center;
-  /* flex-direction: column; */
+  padding: 5px;
+  margin: 5px;
+  padding-left: 20px;
 }
 
-.flex-dir-colu{
+.flex-dir-colu {
   display: flex;
   flex-direction: column;
+  border: 1px solid;
 }
 
 main {
@@ -39,43 +40,36 @@ button {
   padding: 3px;
 }
 
-.innerContainer{
-    padding: 5px;
-    margin: 5px;
-    background: red;
+.innerContainer:nth-child(odd) {
+  background-color: lightgray;
+  padding: 5px;
+  margin: 5px;
+  padding-left: 20px;
 }
 
-.form{
+.form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.input{
-  
-    width: 300px;
-    margin: 20px 0 10px 0;
-    padding: 5px 30px;
-    border-radius: 10px;
-
+.input {
+  width: 300px;
+  height: 48px;
+  margin: 20px 0 10px 0;
+  padding: 5px 10px;
+  border-radius: 4px;
 }
 
-.light{
-  background-color: yellow;
-}
-
-.dark{
-  background-color: blue;
-}
-
-h1{
+h1 {
   text-align: center;
   padding-bottom: 20px;
 }
 
-.addBtn{
+.addBtn {
   border: none;
-    background: green;
-    border-radius: 10px;
+  background: lightgray;
+  border-radius: 4px;
+  height: 35px;
 }

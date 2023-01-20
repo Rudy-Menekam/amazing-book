@@ -31,13 +31,6 @@ g.book.forEach((b) => {
         <hr>
       </div>
     `;
-
-    if (b.id % 2 ==0) {
-      document.querySelector('.innerContainer').classList.add('light')
-    }else{
-      document.querySelector('.innerContainer').classList.add('dark')
-
-    }
 });
 
 bookContainer.addEventListener('click', (e) => {
